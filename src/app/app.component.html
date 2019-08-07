@@ -1,0 +1,16 @@
+<div class="converter">
+  <div class="converter__wrapper">
+    <app-input [unparsedStr]="str" [computedVal]="outputStr"></app-input>
+    <div class="converter__wrapper-keypad">
+      <div class="row" *ngFor="let item of numberKeys">
+        <button (click)="selectNumber(num)" *ngFor="let num of item">{{num}}</button>
+      </div>
+      <div class="row">
+        <button (click)="selectNumber('#')">#</button>
+        <button (click)="selectNumber(0)">0</button>
+        <button (click)="clearValue(num)">&lt;-</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="typedVal != null">Last typed value : {{typedVal}}</div>

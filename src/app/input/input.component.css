@@ -1,0 +1,14 @@
+.input {
+    height: 22px;
+    background: #fff;
+    margin: 2px 4px;
+    padding: 0 5px;
+    line-height: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.computed-str {
+    margin-bottom: 10px;
+}
